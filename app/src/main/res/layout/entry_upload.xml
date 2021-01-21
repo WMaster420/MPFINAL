@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/nameT"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_above="@+id/emailA"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/emailT"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/nameT"
+        android:hint="Email"
+        app:layout_constraintTop_toBottomOf="@+id/nameT"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <EditText
+        android:id="@+id/gradesT"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Grades"
+        app:layout_constraintTop_toBottomOf="@+id/emailT"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="130dp" />
+    <Button
+        android:id="@+id/retrieveB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/gradesT"
+        android:text="Retrieve"/>
+    <Button
+        android:id="@+id/uploadB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/retrieveB"
+        android:text="Upload"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

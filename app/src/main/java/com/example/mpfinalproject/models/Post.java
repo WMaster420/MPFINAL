@@ -5,16 +5,16 @@ import com.google.gson.annotations.SerializedName;
 public class Post {
     private String Name;
     private String Email;
-    private int password;
+    private int grades;
 
     public Post() {
 
     }
 
-    public Post(String name, String email, int password) {
+    public Post(String name, String email, int grades) {
         Name = name;
         Email = email;
-        this.password = password;
+        this.grades = grades;
     }
 
     public String getName() {
@@ -33,11 +33,11 @@ public class Post {
         Email = email;
     }
 
-    public int getPassword() {
-        return password;
+    public int getGrades() {
+        return grades;
     }
 
-    public void setPassword(int password) {
-        this.password = password;
+    public void setGrades(int grades) {
+        this.grades = grades;
     }
 }
