@@ -55,7 +55,7 @@ public class entry_upload extends AppCompatActivity{
         Post pt = new Post(str1, str2, str3);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:3000")
+                .baseUrl("https://192.168.1.18:3000")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         text_view_result = findViewById(R.id.text_view_result);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://10.0.2.2:3000")
+                .baseUrl("https://192.168.1.18:3000")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         JsonPlaceHolderApi JsonPHApi = retrofit.create(JsonPlaceHolderApi.class);
